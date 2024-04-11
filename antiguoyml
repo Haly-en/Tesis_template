@@ -1,0 +1,59 @@
+project:
+  type: book #donde se guardan las salidas EL PDF o HTML´s etc
+
+book:
+  title: "Aquí va un título todo cool"
+  author: "Quién escribió esto"
+  date: 03/07/2005
+  date-format: "dddd MMM D, YYYY" # dddd MMM D, YYYY, MMM D, YYYY
+  chapters:
+    - summary.qmd
+    - index.qmd
+    - Introduccion.qmd
+    - Metodologia.qmd
+    - Resultados.qmd
+    - Referencias.qmd
+
+bibliography: references.bib
+
+format:
+  #html:
+   # theme: cosmo
+  pdf:
+    documentclass: scrreport
+    number-sections: true #false
+    lang: es  #idioma
+    colorlinks: true 
+    linkcolor: Red
+    filecolor: Blue 
+    citecolor:  Goldenrod #YellowOrange
+    urlcolor: ForestGreen
+    toccolor: RoyalBlue # MidnightBlue
+    fontsize: 12pt
+    toc: true #contenido
+    lof: true  #lista de figuras
+    lot: true  #lista de tablas
+    toc-depth: 3 #cuantos Subtitulos acepta 1.2.3 o 1.1.1
+    mainfont: Arial  #Arial Narrow or Roboto Condensed, verdana
+    toc-Title: "Tabla de contenido"
+    lof-Title: "Lista de figuras"
+    lot-Title: "Lista de tabla"
+    biblio-style: apalike
+    biblio-title: "bibliografia"
+    keep-tex: true    
+    link-citations: yes
+    fig_caption:  true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    crossref:
+      fig-prefix: "figuras"
+      tbl-prefix: "tabla"
+    header-includes:
+      #- \usepackage[spanish]{babel}
+      - \usepackage[dvipsnames]{xcolor}
+      - \usepackage[T1]{fontenc}
+      
+    highlight-style: github 
+  epub:
+    cover-image: cover.png
+freeze: true

@@ -1,0 +1,4 @@
+# Discusión {#sec-Discusion}
+
+Aquí van las dicusiones  
+![](imagenes/Henrique.png){fig-align="center"}

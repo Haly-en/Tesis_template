@@ -1,0 +1,76 @@
+project:
+  type: book
+  
+
+book:
+  title: Mi tesis 
+  author: "Mi nombre es "
+  #date: today # o pueden poner la fecha que les acomode mejor
+  date: 30/01/2023
+  chapters:
+    - index.qmd
+    - summary.qmd
+    - Introduccion.qmd
+    - Metodologia.qmd
+    - Resultados.qmd
+    - Referencias.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreport
+    geometry:
+       - top=30mm
+       - bottom=30mm
+       - left=30mm
+       - right=30mm
+       - heightrounded
+
+    #reference-location: margin
+    #citation-location: margin
+    #fig-cap-location: bottom
+    #classoption: [sfsidenotes]
+    
+    number-sections: true
+    lang: es
+    colorlinks: true
+    linkcolor: Red
+    filecolor: Blue 
+    citecolor:  Goldenrod #YellowOrange
+    urlcolor: ForestGreen
+    toccolor: Black # MidnightBlue, RoyalBlue
+    tblcolor: Black
+    mainfont: Arial  #Arial Narrow or Roboto Condensed, verdana
+    fontsize: 12pt
+    fig_caption:  true
+    toc: true
+    lof: true
+    lot: true
+    toc-depth: 3
+    toc-Title: "Tabla de contenidos"
+    lof-Title: "Lista de figuras"
+    lot-Title: "Lista de tabla"
+    biblio-style: apalike
+    biblio-title: "bibliografia"
+    keep-tex: true 
+    keep-md: true
+    link-citations: yes
+    crossref:
+      fig-prefix: "Figura"
+      tbl-prefix: "Tabla"
+    page-layout: full
+    header-includes:
+      #- \usepackage[spanish]{babel}
+      - \usepackage[dvipsnames]{xcolor}
+      - \usepackage[T1]{fontenc}
+      
+    highlight-style: espresso #github 
+    
+  epub:
+    cover-image: cover.png
+execute:
+  freeze: auto
+

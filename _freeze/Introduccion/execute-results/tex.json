@@ -1,0 +1,20 @@
+{
+  "hash": "5adf2fc847d2264d761e703c60926b65",
+  "result": {
+    "markdown": "# Introducción {#sec-Introduccion}\n\nAquí hay un footnote [^introduccion-1]\n\n[^introduccion-1]: Interesantemente, aunque la biogénesis flagelar se conserva entre las bacterias, los mecanismos utilizados para regular la expresión génica flagelar varían mucho entre las diferentes especies bacterianas. Tomando en cuenta las jerarquías transcripcionales flagelares en varias especies bacterianas, la regulación de los genes flagelares está relacionada con otros procesos, como la fase de crecimiento, la detección de quórum y la colonización del huésped. @knuth84\n\n::: {.callout-tip appearance=\"minimal\"}\n## Aquí va tip:\n:::\n\n\n## Una cita \n\nAquí va una cita. @knuth84\n\n\n## Experimental\n\nThe usual experimental details should appear here. This could include a table, which can be referenced as @tbl-example. @tbl-los_promedios Notice that the caption is positioned at the top of the table.\n\n| Header one  | Header two  |\n|-------------|-------------|\n| Entry one   | Entry two   |\n| Entry three | Entry four  |\n| Entry five  | Entry six   |\n| Entry seven | Entry eight |\n\n: An example table {#tbl-example}\n\n\n| Juego             | Compañia    | Clasificacion | Precio (MXN) |\n|-------------------|-------------|---------------|--------------|\n| Animal Crossing   | Nintendo    | E             | 1600         |\n| Persona 5         | Atlus       | T             | 1500         |\n| Final Fantasy VII | Square Enix | T             | 1500         |\n| Fortnite          | Epic Games  | M             | 0            |\n\n: Esta es una tabla de promedios {#tbl-los_promedios}\n\nYou may add footnotes to ables as illustrated (@tbl-notes).\n\n| Header one      | Header two  |\n|-----------------|-------------|\n| Entry one[^1]   | Entry two   |\n| Entry three[^lolo] | Entry four  |\n| Entry five      | Entry six   |\n| Entry seven     | Entry eight |\n\n: An example table with notes {#tbl-notes}\n\n[^1]: This is a footnote\n\n[^lolo]: This is a second note\n\n![An example scheme](imagenes/gato_siames.jpg){#fig-el_gato}\n\n\nLa figura @fig-elephants puchis pushis \n\n\n::: {#fig-elephants layout-ncol=2}\n\n![gato1](imagenes/gato_siames.jpg){#fig-surus}\n\n![Gato 2](imagenes/gato_siames.jpg){#fig-hanno}\n\nLos famosos gatos siames \n:::\n\n<\\break>\n\n\n::: {.cell figecho='false'}\n::: {.cell-output-display}\n![**Esquema de metodología**. La metodología que seguimos se dividió en tres fases: la preparación de los datos, donde se genera el agrupamiento de los organismos representativos por clase a una profundidad taxonómica de género. Adicionalmente, en esta etapa también se  construyó la matriz semilla para la búsqueda inicial de motivos, basados en la posición de un gen *rpoN* dentro de un operón. La segunda etapa incluye la predicción de los promotores, o posibles genes blanco, en los genomas de los organismos de estudio y la evaluación de la predicción respecto a los datos del sigmulón de *Escherichia coli*, anotados en RegulonDB. En la tercera fase se realiza el análisis de la distribusión hipergeométrica de los grupos de ortología (COGs) con valores estadísticos significativos en las diferentes clases filogenéticas y su interpretación funcional biológica.](imagenes/gato_siames.jpg){#fig-metodologia fig-pos='H' width=50%}\n:::\n:::\n\n\n<\\break>\n\nkjsksndkjahdkjsahd",
+    "supporting": [
+      "Introduccion_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}
